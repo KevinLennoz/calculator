@@ -71,9 +71,9 @@ pipeline {
                                 removePrefix: "",
                                 remoteDirectory: "//home//vagrant",
                                 execCommand: '''
-                                    cd /home/vagrant;
+                                    cd /home/vagrant
                                     sudo docker build -t demo .;
-                                    sudo run -d --name demo -p 8080:8080 demo;
+                                    sudo docker run -d --name demo -p 8080:8080 demo;
                                 '''
                             )
                         ])
